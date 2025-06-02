@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        ::cue{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <video controls autoplay muted loop>
+        <source src="media/video.mp4" type="audio/mp4">
+        <source src="media/video.ogv" type="audio/ogv">
+        <source src="media/video.webm" type="audio/webm">
+        <track src="media/track.pt.vtt" kind="captions" srclang="pt" label="Português">
+        <track src="media/track.en.vtt" kind="captions" srclang="en" label="English">
+    </video> 
+</body>
+</html>
