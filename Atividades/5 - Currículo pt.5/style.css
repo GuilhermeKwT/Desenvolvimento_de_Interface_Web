@@ -1,0 +1,120 @@
+:root {
+    --text-color: #fff;
+    --main-color: #333;
+    --secondary-color: #555;
+    --terciary-color: #777;
+    --accent-color1: #fcb045;
+    --accent-color2: #fd1f2e;
+}
+
+html {
+    font-size: 62.5%;
+    background-color: rgba(0, 0, 0, .85);
+    background-image: url(images/damascus2.jpg);
+    background-size: 160%;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    width: 70vw;
+    margin: auto;
+    border-left: var(--secondary-color) solid 5px;
+    border-right: var(--secondary-color) solid 5px;
+    color: var(--text-color);
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+hr {
+    border: none;
+    border: var(--accent-color2) 1px solid;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    padding: 10px 0;
+}
+
+.header__img {
+    flex-grow: 1;
+    background-color: var(--terciary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0;
+    border-radius: 0 0 30px;
+}
+
+.header__img img {
+    border: 6px solid var(--secondary-color);
+    border-radius: 12px;
+    max-width: 80%;
+    height: auto;
+}
+
+.header__content {
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 3.6rem;
+    background-color: var(--terciary-color);
+    padding: 10px 5px;
+}
+
+#info {
+    text-align: center;
+    font-size: 1.4rem;
+    font-variant: small-caps;
+}
+
+.subtitle {
+    background-color: var(--terciary-color);
+    width: fit-content;
+    text-indent: 30px;
+    border-top: 5px solid #000;
+    border-radius: 0 0 10px 0;
+    padding: 5px 10px;
+}
+
+.subtitle__date {
+    color: var(--accent-color1);
+    font-weight: bolder;
+}
+
+.link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ol li {
+    list-style-type: upper-roman;
+}
+
+a:link {
+    color: var(--accent-color1);
+}
+
+a:visited {
+    color: var(--accent-color2);
+}
+
+a:hover {
+    background-color: var(--terciary-color);
+}
+
+a:active {
+    background-color: var(--accent-color2);
+}
