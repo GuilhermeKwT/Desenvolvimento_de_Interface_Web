@@ -1,0 +1,17 @@
+let arr = [1, 3, 5, 7, 9]
+arr.push(11, 13)
+console.log(arr)
+let removido = arr.pop()
+console.log(removido)
+console.log(arr)
+let removido2 = arr.shift() // Remove o primeiro elemento do array
+console.log(removido2)
+console.log(arr)
+arr.unshift(1) // Adiciona um elemento no início do array
+console.log(arr)
+let arr2 = arr.slice(1, 3) // Cria um novo array com os elementos do índice 1 ao 2
+console.log(arr2)
+console.log(arr)
+let arr3 = arr.splice(2, 2) // Remove os elementos do índice 2 ao 3 e retorna um novo array
+console.log(arr3)
+console.log(arr)
