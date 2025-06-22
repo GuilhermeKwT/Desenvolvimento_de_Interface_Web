@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 8</title>
+    <script>
+        let notas = []
+        for (let i = 0; i < 4; i++) {
+            let nota = parseFloat(prompt(`Digite a nota ${i + 1}:`))
+            if (isNaN(nota) || nota < 0 || nota > 10) {
+                alert("Por favor, insira uma nota válida entre 0 e 10.")
+                i--
+            } else {
+                notas.push(nota)
+            }
+        }
+        let soma = notas.reduce((acc, curr) => acc + curr, 0)
+        let media = soma / notas.length
+        document.write(`Média: ${media}`)
+        if (media >= 7) {
+            document.write("<br>Aprovado")
+        } else {
+            document.write("<br>Reprovado")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 9</title>
+    <script>
+        let arr = []
+        for (let i = 0; i < 10; i++){
+            arr[i] = parseInt(prompt(`Digite o ${i + 1}º número:`))
+        }
+        let maior = arr[0]
+        arr.forEach((num) => {
+            if (num > maior) {
+                maior = num
+            }
+        })
+        document.write(`O maior número é: ${maior}`)
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
