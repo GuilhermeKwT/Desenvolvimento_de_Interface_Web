@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Chocolates</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img src="logo.png" alt="Logo" class="logo">
+            <input type="text" placeholder="O que você procura?" class="search">
+            <div class="user-options">
+                <a href="#">Entre ou Cadastre-se</a>
+                <button id="theme-toggle">🌙</button>
+            </div>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Todos os Produtos</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Presentes</a></li>
+                <li><a href="#">Nossas Linhas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-item active">Destaque 1</div>
+                <div class="carousel-item">Destaque 2</div>
+                <div class="carousel-item">Destaque 3</div>
+            </div>
+        </section>
+        <section class="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="produtos-grid">
+                <div class="produto">Produto 1</div>
+                <div class="produto">Produto 2</div>
+                <div class="produto">Produto 3</div>
+                <div class="produto">Produto 4</div>
+            </div>
+        </section>
+        <section class="detalhes">
+            <ul>
+
+            </ul>
+        </section>
+        <section class="newsletter">
+            <h3>Fique por dentro das novidades</h3>
+            <form id="newsletter-form">
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+                <input type="email" id="email" placeholder="Digite seu e-mail" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+            <p id="mensagem"></p>
+        </section>
+    </main>
+    <footer>
+        <img src="logo.png" alt="Logo" class="logo">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Atendimento</a>
+        <a href="#">Termos de Uso</a>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
