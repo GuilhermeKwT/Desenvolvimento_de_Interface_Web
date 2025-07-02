@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delegação de Eventos</title>
+</head>
+<body>
+    <h1>Delegação de Eventos</h1>
+    <div class="container">
+        <button>Botão 1</button>
+        <button>Botão 2</button>
+        <button>Botão 3</button>
+    </div>
+    <script>
+        const container = document.querySelector(".container")
+        const btns = document.querySelectorAll(".container button")
+        btns[0].addEventListener("click", function(e){
+            console.log(e.currentTarget)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <button id="btn1">Botão 1</button>
+    <button id="btn2">Botão 2</button>
+    <button id="btn3">Botão 3</button>
+    <button id="btn4">Botão 4</button>
+    <button id="btn5">Botão 5</button>
+
+    <script>
+        const btn1 = document.getElementById("btn1")
+        const btn2 = document.getElementById("btn2")
+        const btn3 = document.getElementById("btn3")
+        const btn4 = document.getElementById("btn4")
+        const btn5 = document.getElementById("btn5")
+
+        btn1.onclick = function(){
+            console.log("clicou no botão 1")
+        }
+
+        btn2.addEventListener("click", clicou)
+        function clicou(){
+            console.log("clicou no botão 2")
+        }
+
+        btn3.addEventListener("click", function(){
+            console.log("clicou no botão 3")
+        })
+        
+        btn4.addEventListener("click", function(){
+            console.log("clicou no botão 4")
+        }, true)
+        
+        document.addEventListener("click", function(){
+            console.log("clicou no document")
+        }, false)
+
+        btn5.addEventListener("click", function(evt){
+            console.log(evt)
+            evt.stopPropagation()
+        }, true)
+    </script>
+</body>
+</html>
