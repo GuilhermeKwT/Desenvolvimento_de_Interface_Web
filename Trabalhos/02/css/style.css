@@ -12,12 +12,13 @@
     --bg-color2: #242424;
     --text-color: #eee;
     --accent: #b0903d;
+
     .material-symbols-outlined {
         font-variation-settings:
-        'FILL' 1,
-        'wght' 400,
-        'GRAD' 0,
-        'opsz' 24;
+            'FILL' 1,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24;
     }
 }
 
@@ -42,11 +43,11 @@ footer {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
 }
 
 .produtos h2,
@@ -86,7 +87,7 @@ footer {
     gap: 1rem;
 }
 
-.user-options a{
+.user-options a {
     color: var(--text-color);
     background-color: var(--bg-color2);
     text-decoration: none;
@@ -116,6 +117,7 @@ footer {
     display: flex;
     align-items: center;
 }
+
 .nav li {
     display: flex;
     justify-content: center;
@@ -223,7 +225,7 @@ footer {
 /* Produtos */
 .produtos-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, minmax(12.5rem, 1fr));
     gap: 1rem;
     margin: 1rem 0;
 }
@@ -336,7 +338,13 @@ footer a {
     text-decoration: none;
 }
 
-header, body, footer, .carousel-item, .produto, .newsletter, .newsletter button{
+header,
+body,
+footer,
+.carousel-item,
+.produto,
+.newsletter,
+.newsletter button {
     transition: background 0.5s, color 0.5s;
 }
 
@@ -349,18 +357,22 @@ header, body, footer, .carousel-item, .produto, .newsletter, .newsletter button{
     margin-top: 1rem;
 }
 
-.show{
+.show {
     display: block;
 }
 
+@media screen and (max-width: 55rem) {
+    .produtos-grid {
+        grid-template-columns: repeat(2, minmax(12.5rem, 1fr));
+    }
+}
+
 @media screen and (max-width: 32.5rem) {
-
-
     .detalhes ul {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .detalhes li {
         max-width: 100%;
         padding: 0.75rem 0;
@@ -376,16 +388,20 @@ header, body, footer, .carousel-item, .produto, .newsletter, .newsletter button{
         width: 100%;
         margin: 0.5rem 0;
     }
-    
-    footer{
+
+    footer {
         flex-direction: column;
         text-align: center;
     }
 }
 
-@media screen and (max-width: 22.5rem) {
+@media screen and (max-width: 26rem) {
     .nav ul {
         flex-direction: column;
         align-items: center;
+    }
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
     }
 }
