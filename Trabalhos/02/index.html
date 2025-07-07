@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=dark_mode" />
     <title>Chocolates</title>
 </head>
 <body>
     <header>
         <div class="header-top">
-            <img src="logo.png" alt="Logo" class="logo">
+            <img src="assets/logo.svg" alt="Logo" class="logo">
             <input type="text" placeholder="O que você procura?" class="search">
             <div class="user-options">
                 <a href="#">Entre ou Cadastre-se</a>
-                <button id="theme-toggle">🌙</button>
+                <button class="material-symbols-outlined" id="theme-toggle">dark_mode</button>
             </div>
         </div>
         <nav class="nav">
@@ -28,23 +29,34 @@
     <main>
         <section class="carousel">
             <div class="carousel-container">
-                <div class="carousel-item active">Destaque 1</div>
-                <div class="carousel-item">Destaque 2</div>
-                <div class="carousel-item">Destaque 3</div>
+                <div class="carousel-item active"><picture>
+                    <source srcset="assets/banner1.webp" media="(max-width: 55em)">
+                    <img src="assets/banner1-large.webp" alt="Banner 1">
+                </picture></div>
+                <div class="carousel-item"><picture>
+                    <source srcset="assets/banner2.png" media="(max-width: 55em)">
+                    <img src="assets/banner2-large.png" alt="Banner 2">
+                </picture></div>
+                <div class="carousel-item"><picture>
+                    <source srcset="assets/banner3.webp" media="(max-width: 55em)">
+                    <img src="assets/banner3-large.webp" alt="Banner 3">
+                </picture></div>
             </div>
         </section>
         <section class="produtos">
             <h2>Produtos em Destaque</h2>
             <div class="produtos-grid">
-                <div class="produto">Produto 1</div>
-                <div class="produto">Produto 2</div>
-                <div class="produto">Produto 3</div>
-                <div class="produto">Produto 4</div>
+                <div class="produto"><img src="assets/image1.avif" alt="" class="produto-img">Caixa Chocomellow</div>
+                <div class="produto"><img src="assets/image2.avif" alt="" class="produto-img">Tablete 70% Cacau</div>
+                <div class="produto"><img src="assets/image3.avif" alt="" class="produto-img">Ovo Chocomellow</div>
+                <div class="produto"><img src="assets/image4.avif" alt="" class="produto-img">Kit Língua de Gato</div>
             </div>
         </section>
         <section class="detalhes">
             <ul>
-
+                <li>Entrega grátis para compras acima de R$ 150</li>
+                <li>100% do cacau utilizado é de origem sustentável</li>
+                <li>Presenteie com elegância e sabor</li>
             </ul>
         </section>
         <section class="newsletter">
@@ -52,13 +64,13 @@
             <form id="newsletter-form">
                 <input type="text" id="nome" placeholder="Digite seu nome" required>
                 <input type="email" id="email" placeholder="Digite seu e-mail" required>
-                <button type="submit">Cadastrar</button>
+                <button type="submit" id="cadastrar">Cadastrar</button>
             </form>
-            <p id="mensagem"></p>
+            <p id="mensagem" class="mensagem"></p>
         </section>
     </main>
     <footer>
-        <img src="logo.png" alt="Logo" class="logo">
+        <img src="assets/logo.svg" alt="Logo" class="logo">
         <a href="#">Política de Privacidade</a>
         <a href="#">Atendimento</a>
         <a href="#">Termos de Uso</a>
